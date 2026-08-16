@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DAR LANA9A SHOP | Montres & Accessoires de Luxe</title>
 
+    <!-- Browser Tab Favicon Logo -->
+    <link rel="icon" type="image/jpeg" href="logow.jpeg">
+
     <!-- Open Graph Meta Tags for WhatsApp Preview -->
     <meta property="og:title" content="DAR LANA9A SHOP - Collection 2026">
     <meta property="og:description" content="Commandez vos montres et accessoires préférés avec livraison rapide et paiement à la livraison.">
+    <meta property="og:image" content="logow.jpeg">
     <meta property="og:type" content="website">
 
     <!-- Google Fonts & FontAwesome Icons -->
@@ -35,28 +39,26 @@
         body {
             background-color: var(--cream-bg);
             color: var(--text-dark);
-            padding-top: 140px; /* Augmenté pour s'ajuster au header plus grand */
+            padding-top: 120px;
         }
 
         h1, h2, h3, .brand-title {
             font-family: 'Cinzel', serif;
         }
 
-        /* Header / Navbar Agrandie */
+        /* Header / Navbar */
         header {
             background-color: var(--primary);
             color: white;
-            height: 120px; /* Augmenté de 85px à 120px */
+            padding: 0.8rem 1.5rem;
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             z-index: 100;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
             transition: transform 0.3s ease-in-out;
-            border-bottom: 3px solid var(--accent-gold);
-            display: flex;
-            align-items: center;
+            border-bottom: 2px solid var(--accent-gold);
         }
 
         header.header-hidden {
@@ -64,59 +66,48 @@
         }
 
         .header-content {
-            max-width: 1200px;
-            width: 100%;
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 0 2rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 1.8rem;
-            height: 100%;
+            gap: 1.2rem;
         }
 
         .header-logo {
-            height: 101px; /* Agrandie de 60px à 90px */
-            width: 10%;
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid var(--accent-gold);
+            border: 2px solid var(--accent-gold);
             background-color: var(--cream-bg);
-            display: block;
+            flex-shrink: 0;
         }
 
         .header-text {
             text-align: left;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
         }
 
         .header-text h1 {
-            font-size: 1.8rem; /* Titre plus grand */
-            letter-spacing: 2px;
+            font-size: 1.4rem;
+            letter-spacing: 1.5px;
             font-weight: 700;
             color: #ffffff;
             margin: 0;
-            line-height: 1.2;
         }
 
         .header-text p {
-            font-size: 0.95rem; /* Sous-titre plus grand */
+            font-size: 0.8rem;
             color: var(--accent-gold);
-            letter-spacing: 0.8px;
-            margin-top: 4px;
+            letter-spacing: 0.5px;
         }
 
         /* Hero Banner */
         .hero {
-            background: linear-gradient(rgba(18, 21, 28, 0.82), rgba(18, 21, 28, 0.82)), 
-                        url('rolex1.jpg');
-            background-size: cover;
-            background-position: center;
+            background-color: var(--primary);
             color: white;
             text-align: center;
-            padding: 4.5rem 1rem;
+            padding: 4rem 1rem;
             border-bottom: 3px solid var(--accent-gold);
         }
 
@@ -426,10 +417,10 @@
 </head>
 <body>
 
-    <!-- Header Agrandie -->
+    <!-- Header -->
     <header id="mainHeader">
         <div class="header-content">
-            <img src="logoow.jpeg" alt="DAR LANA9A SHOP Logo" class="header-logo" onerror="this.style.display='none'">
+            <img src="logoow.jpeg" alt="DAR LANA9A SHOP Logo" class="header-logo">
             <div class="header-text">
                 <h1>DAR LANA9A SHOP</h1>
                 <p>Paiement à la Livraison & Livraison Rapide</p>
@@ -526,35 +517,35 @@
                 id: "W01",
                 title: "Rolex Day-Date Silver Stick",
                 desc: "Cadran argenté avec lignes verticales, index bâtons luminescents et bracelet Président en acier.",
-                price: "200 DH",
+                price: "450 DH",
                 image: "rolex1.jpeg"
             },
             {
                 id: "W02",
                 title: "Rolex Day-Date Roman Silver",
                 desc: "Cadran effet guilloché avec chiffres romains élégants, loupe Cyclope et finition acier brillant.",
-                price: "200 DH",
+                price: "450 DH",
                 image: "rolex2.jpeg"
             },
             {
                 id: "W03",
                 title: "Patek Philippe Nautilus Green",
                 desc: "Cadran vert olive strié emblématique, lunette octogonale adoucie et bracelet intégré en acier.",
-                price: "150 DH",
+                price: "520 DH",
                 image: "phillip1.jpeg"
             },
             {
                 id: "W04",
                 title: "Audemars Piguet Royal Oak Silver",
                 desc: "Design iconique octogonal, cadran blanc texturé 'Grande Tapisserie', acier d'exception et allure résolument sportive et chic.",
-                price: "200 DH",
+                price: "490 DH",
                 image: "patekw.jpeg"
             },
             {
                 id: "W05",
                 title: "Audemars Piguet Royal Oak Black",
                 desc: "Finition acier brossé, cadran noir intense motif Grande Tapisserie avec boîtier profilé.",
-                price: "200 DH",
+                price: "490 DH",
                 image: "patekb1.jpeg"
             }
         ];
